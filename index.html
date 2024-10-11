@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A survey of Digital Wellbeing in IT employees</title>
+    <title>Digital Wellbeing Charts</title>
     <style>
-        body {
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: black;
         }
-        h1 {
-            text-align: center;
-            color: #333;
+        .full-screen-image {
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            background-image: url('https://www.endnowfoundation.org/wp-content/uploads/elementor/thumbs/Digital-Wellbeing-scaled-pt6mjy9lqi937kelthaywigo82uju8qbx3he2jf348.jpg');
+            background-size: cover;
+            background-position: center;
         }
-        .chart-container {
+        .content-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+	    font-weight: bold;
+            margin-top: 20px;
         }
         iframe {
             margin: 15px 0;
@@ -27,10 +38,13 @@
     </style>
 </head>
 <body>
+    <h1>A survey on Digital Wellbeing among IT employees</h1>
+    <!-- Full screen image section -->
+    <div class="full-screen-image"></div>
 
-    <h1>A survey of Digital Wellbeing in IT employees</h1>
-
-    <div class="chart-container">
+    <!-- Content section with charts -->
+    
+    <div class="content-container">
         <iframe width="600" height="371" seamless frameborder="0" scrolling="no" 
             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSoBy44cRE0mVpjD68xK6rUVLI8vayeg_VOJywk-ytC8UGu4qffeLsRma0nm98ZgVEq7g4yqvcGc6Fm/pubchart?oid=532871924&amp;format=interactive">
         </iframe>
